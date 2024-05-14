@@ -1,0 +1,99 @@
+Number of sales by year.
+->
+select extract(year from order_Purchase)as year, extract(month from order_Purchase)as month
+,count(order_id)as No. of Orders from orders group by 1,2 order by 1,2;
+
+**********************************************************
+
+Number of seller for each category.
+->
+select pc.product_category_name_english, count(distinct s.seller_id) 
+from products p 
+join product_category pc on pc.product_category_name = p.product_category_name 
+join ordered_items ot on p.product_id = ot.product_id 
+join sellers s on s.seller_id = ot.seller_id 
+group by 1 order by 2 desc;
+
+**********************************************************
+
+Top 10 cities with highest sellers.
+->
+select g.geolocation_city, count(distinct s.seller_id) 
+from geolocation g join sellers s on g.geolocation_zip_code_prefix = s.seller_zip_code_prefix 
+group by 1 order by 2 desc limit 10;
+
+**********************************************************
+
+No. of order by order status
+->
+select order_status, count(distinct order_id) 
+from orders 
+group by 1;
+
+*********************************************************************
+
+Top sellers with highest number of customer, products and best reviews
+->
+select seller_id, count(distinct customer_id), count(distinct order_id)  from sellers s join ordered_items ot on ot.seller_id = s.seller_id join orders o on o.order_id = ot.order_id join customer c on c.customer_id = o.customer_id join reviews r on r.order_id = o.order_id
+
+**********************************************************************
+
+Classify the orders on the basis of number of days it took to be delivered.
+->
+with cte as 
+(select order_id, order_delivered_carrier_date - order_purchase as NoofDays 
+from orders 
+where order_status = 'delivered')
+, cte2 as
+            (select case when NoofDays <= 7 then 'Fast' 
+                when NoofDays > 7 and NoofDays <= 15 then 'Normal' 
+                else 'Late' end as Order_Completing
+            , order_id from cte) 
+
+select Order_Completing,  count(order_id)as NoofOrders
+, (count(order_id)*100)/ (SELECT COUNT(order_id) FROM Orders) as Percentage 
+from cte2 group by 1;
+
+***************************************
+
+Payment options 
+-> select payment_type, count(order_id)
+, round((count(order_id)*100)/(select COUNT(order_id) 
+FROM Order_payments),2) as Percentage 
+from order_payments group by 1 order by 2;
+
+***************************************
+
+Average reviews each seller got
+->
+select distinct s.seller_id, s.seller_city, s.seller_state, round(avg(r.review_score),2) from sellers
+s join ordered_items ot on ot.seller_id = s.seller_id join orders o on o.order_id = ot.order_id join reviews r on
+ r.order_id = o.order_id  group by 1,2,3;
+
+***************************************************
+
+Average order value 
+ ->
+  with cte as 
+  (select order_id, count(product_id) 
+  from ordered_items 
+  group by 1 order by count desc)
+  select order_id, round(avg(count),2) from  cte;
+
+*****************************************************************
+
+Preferred form of payment for differenct categories
+->
+  with cte as 
+  (select pc.product_category_name_english, op.payment_type as Prefrred_Option
+  , count(o.order_id)as Total_payments 
+  from orders o left join order_payments op on op.order_id = o.order_id  
+  left join ordered_items ot on ot.order_id = o.order_id 
+  left join products p on p.product_id = ot.product_id  
+  left join product_category pc on pc.product_category_name = p.product_category_name 
+  group by 1,2)
+  , cte2 as(select *
+  , dense_rank() over(partition by product_category_name_english order by Total_payments desc) from cte) 
+  select product_category_name_english,prefrred_option, total_payments 
+  from cte2 where dense_rank = 1;
+ 
