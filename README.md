@@ -24,4 +24,4 @@ All text identifying stores and partners where replaced by the names of Game of 
 The full dataset is divided in 8 files: orders, payments, reviews, items, products, sellers, customers, geolocation. 
 Descriptions of the columns can be found on the the Kaggle link above, or on the main script.
 
-<img src="https://github.com/user-attachments/assets/788093e2-6334-413a-9df9-94d0c8ef1827" alt="Alt Text" width="800" height="600">
+<img src="https://github.com/user-attachments/assets/788093e2-6334-413a-9df9-94d0c8ef1827" alt="Alt Text" width="800" height="450">
