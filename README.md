@@ -16,9 +16,9 @@ Brazil to channels without hassle and with a single contract. Those merchants ar
 them directly to the customers using Olist logistics partners.
 
 ## Important notes about the data
-An order might have multiple items.
-Each item might be fulfilled by a distinct seller.
-All text identifying stores and partners where replaced by the names of Game of Thrones great houses.
+* An order might have multiple items.
+* Each item might be fulfilled by a distinct seller.
+* All text identifying stores and partners where replaced by the names of Game of Thrones great houses.
 
 ## Schema
 The full dataset is divided in 8 files: orders, payments, reviews, items, products, sellers, customers, geolocation. 
