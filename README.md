@@ -25,4 +25,4 @@ The full dataset is divided in 8 files: orders, payments, reviews, items, produc
 Descriptions of the columns can be found on the the Kaggle link above, or on the main script.
 
 ![ER - Diagram](https://github.com/user-attachments/assets/788093e2-6334-413a-9df9-94d0c8ef1827)
-<img src="https://github.com/user-attachments/assets/788093e2-6334-413a-9df9-94d0c8ef1827" alt="Alt Text" width="300" height="200">
+<img src="https://github.com/user-attachments/assets/788093e2-6334-413a-9df9-94d0c8ef1827" alt="Alt Text" width="600" height="600">
