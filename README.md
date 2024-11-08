@@ -30,6 +30,7 @@ Descriptions of the columns can be found on the the Kaggle link above, or on the
 * Payment Distribution by States
 * Do orders vary throughout the year? If there any diffrence in orders on weekdays and weekends?
 * What is the Famous Payment Method
+* Shipping Days
 
 ## Payment Distribution by States
 
@@ -48,6 +49,10 @@ I have used the Donut chart to show the distribution of orders as there were onl
 I have used the bar chart to show what is the preferred mode of payment
 
 <img width="560" height="400" alt="Pay_type" src="https://github.com/user-attachments/assets/13e002fc-b1b3-4ec1-92cf-e100da0c605d">
+
+## Shipping days 
+
+<img width="560" alt="Ship_days" src="https://github.com/user-attachments/assets/85d392a4-8374-4a34-b00d-021c58c2cda5">
 
 
 ## Conclusion
