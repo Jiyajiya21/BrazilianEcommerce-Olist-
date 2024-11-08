@@ -51,7 +51,7 @@ I have used the bar chart to show what is the preferred mode of payment
 
 
 ## Conclusion
-* Paraíba (PB) is the highest ranked region by average transaction value for both customers and sellers.
+* São Paulo (SP) is the highest ranked region by average transaction value for both customers and sellers.
 * Amazonas has the larget number of shipping days.
 * Mostly payments are done with Credit Cards.
-*  
+* Weekends does not have much hike compared to weekdays.
