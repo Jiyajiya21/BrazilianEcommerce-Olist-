@@ -34,7 +34,7 @@ Descriptions of the columns can be found on the the Kaggle link above, or on the
 
 ## Payment Distribution by States
 
-I have use a Bar chart in the tool tip to show the orders and payment distribution 
+I have used a Bar chart in the tool tip to show the orders and payment distribution simultaneosly.
 
 <img width="808" alt="Payment" src="https://github.com/user-attachments/assets/10f58629-a995-4bfe-92f6-8f4ffa6ef6b9">
 
