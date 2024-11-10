@@ -60,3 +60,9 @@ I have used the bar chart to show what is the preferred mode of payment
 * Amapá has the larget number of shipping days.
 * Mostly payments are done with Credit Cards.
 * Weekends does not have much hike compared to weekdays.
+
+## Recommendations 
+* Increase Weekend Promotions
+  The finding that weekends don’t show a significant hike in sales compared to weekdays suggests that there may be an opportunity to drive more weekend sales. Offering exclusive weekend discounts, flash sales, or free shipping on weekend orders could encourage customers to shop more during these periods.
+* #### Monitor Shipping Performance Across All Regions -
+  Given the challenge observed in Amapá, it may be worthwhile to monitor and compare shipping performance across all regions. Identifying areas with potential delays or inconsistent delivery experiences can allow for proactive solutions to optimize the overall customer experience.
