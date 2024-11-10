@@ -67,4 +67,4 @@ I have used the bar chart to show what is the preferred mode of payment
 * #### Monitor Shipping Performance Across All Regions -
   Given the challenge observed in Amapá, it may be worthwhile to monitor and compare shipping performance across all regions. Identifying areas with potential delays or inconsistent delivery experiences can allow for proactive solutions to optimize the overall customer experience.
 * #### Focus Marketing Efforts on São Paulo (SP)
-Since São Paulo has the highest average transaction value for both customers and sellers, it could be beneficial to focus targeted marketing efforts in this region. This could include offering special promotions, loyalty programs, or personalized offers to drive repeat purchases and increase customer lifetime value in São Paulo.
+  Since São Paulo has the highest average transaction value for both customers and sellers, it could be beneficial to focus targeted marketing efforts in this region. This could include offering special promotions, loyalty programs, or personalized offers to drive repeat purchases and increase customer lifetime value in São Paulo.
