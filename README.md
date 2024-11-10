@@ -62,7 +62,9 @@ I have used the bar chart to show what is the preferred mode of payment
 * Weekends does not have much hike compared to weekdays.
 
 ## Recommendations 
-* Increase Weekend Promotions
+* #### Increase Weekend Promotions
   The finding that weekends don’t show a significant hike in sales compared to weekdays suggests that there may be an opportunity to drive more weekend sales. Offering exclusive weekend discounts, flash sales, or free shipping on weekend orders could encourage customers to shop more during these periods.
 * #### Monitor Shipping Performance Across All Regions -
   Given the challenge observed in Amapá, it may be worthwhile to monitor and compare shipping performance across all regions. Identifying areas with potential delays or inconsistent delivery experiences can allow for proactive solutions to optimize the overall customer experience.
+* #### Focus Marketing Efforts on São Paulo (SP)
+Since São Paulo has the highest average transaction value for both customers and sellers, it could be beneficial to focus targeted marketing efforts in this region. This could include offering special promotions, loyalty programs, or personalized offers to drive repeat purchases and increase customer lifetime value in São Paulo.
